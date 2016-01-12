@@ -18,7 +18,7 @@ describe('Github API Simulation', function(){
     casper.thenOpen(host + '/users/htunny', function(response){
       expect(response.headers.get('Access-Control-Allow-Origin')).to.equal('*');
       expect(response.headers.get('Content-Type')).to.equal('application/json; charset=utf-8');
-      expect('body').to.have.text('{"login":"htunny", "html_url":"147", "public_repos":"216", "followers":"11", "avatar_url": "https://avatars0.githubusercontent.com/u/14794205?v=3&s=460"}');
+      expect('body').to.have.text('{"login":"htunny", "html_url":"147", "public_repos":"32", "followers":"11", "avatar_url": "https://avatars0.githubusercontent.com/u/14794205?v=3&s=460"}');
     });
   });
 
